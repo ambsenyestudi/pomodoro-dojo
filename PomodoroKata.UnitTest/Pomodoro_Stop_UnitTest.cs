@@ -37,6 +37,11 @@ namespace PomodoroKata.UnitTest
         public void PomodoroShouldNotEndIfItHasNotStarted()
         {
             bool expectedCanEnd = false;
+
+            //checkit really?
+            /*Stop?
+             *
+            */
             Assert.AreEqual(_pomodoro.CanEnd, expectedCanEnd);
         }
         [TestMethod]
