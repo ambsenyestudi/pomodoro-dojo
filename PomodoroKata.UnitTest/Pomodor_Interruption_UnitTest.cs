@@ -19,6 +19,18 @@ namespace PomodoroKata.UnitTest
         {
             Assert.AreEqual(true, true);
         }
+        [TestMethod]
+        public void Pomodoro_WithNoInterruption()
+        {
+            Assert.AreEqual(_pomodoro.NInterruptions, 0);
+        }
+        
+        [TestMethod]
+        public void PomodoroCanNotBeInterrptedIfNotStarted()
+        {
+            //ToDo
+        }
+        
         /*
         INTERRUPCIONES
         Un pomodoro se inicia sin interrupciones.

@@ -25,5 +25,20 @@ namespace PomodoroKata.UnitTest
         Un pomodoro dura 25 minutos por defecto.
         Puedo crear un pomodoro con cualquier duración.
         */
+        [TestMethod]
+        public void WhenCreatedAPomodoroShouldLast25Minutes()
+        {
+            Pomodoro p = new Pomodoro();
+            int expected = 25;
+            Assert.AreEqual(p.Duration, expected);
+
+        }
+        [TestMethod]
+        public void PomodoronShouldHaveSettableDuration()
+        {
+            int expected = 12;
+            Pomodoro p = new Pomodoro() { Duration = expected };
+            Assert.AreEqual(p.Duration, expected);
+        }
     }
 }
