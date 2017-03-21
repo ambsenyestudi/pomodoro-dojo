@@ -19,6 +19,7 @@ namespace PomodoroKata.UnitTest
         {
             Assert.AreEqual(true, true);
         }
+
         /*
         CREAR UN POMODORO
         Un pomodoro dura 25 minutos por defecto.
